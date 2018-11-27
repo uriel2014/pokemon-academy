@@ -76,13 +76,18 @@
   padding: 8px 0;
 }
 
+.button:hover{
+  background-color: blue;
+  color:white;
+}
+
 /* INFORMATION SECTION */
 
 .info-container{
   display:flex;
   justify-content: flex-start;
-  align-items: center;
   width:100%;
+  background-color: lightgrey;
 }
 
 .main-info{
@@ -90,7 +95,6 @@
   flex-direction: column;
   width:60%;
   padding:32px 24px;
-  background-color: lightgrey;
 }
 
 .main-info img{
@@ -111,18 +115,22 @@
   display:flex;
   flex-direction: column;
   width:40%;
-  background-color: skyblue;
+  margin-top: 32px;
 }
 
 .story{
   display:flex;
   justify-content: flex-start;
-  border-bottom: 1px solid maroon;
   width:100%;
 }
 
+.story:hover{
+  background-color: white;
+  color:blue;
+}
+
 .story img{
-  height:auto;
+  height:200px;
   width:35%;
   padding:16px 0 16px 16px;
 }
@@ -144,6 +152,7 @@
   padding-bottom: 8px;
 }
 
+
 .story-content span{
   color: blue;
   padding-bottom 16px;
@@ -161,7 +170,7 @@
 }
 
 .course-container h1{
-  padding: 32px 0;
+  padding: 32px 0 0 0;
   text-align: center;
   font-weight: bold;
   font-size: 32px;
@@ -169,6 +178,151 @@
 
 .courses{
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 32px 72px;
+  width:auto;
+}
+
+/* Here we give the course section not 100% of the width but auto to fit the padding
+being taking into place. */
+
+.course{
+  display:flex;
+  flex-direction: column;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  width:30%;
+}
+/* This will give each course a width of 30% of the auto width that was proposed*/
+
+.course img{
+  height:200px;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.topic{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color:black;
+  height:150px;
+  padding: 16px;
+}
+
+.topic:hover{
+  background-color: black;
+  color:white;
+}
+
+.topic h2{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom:16px;
+}
+
+.topic p{
+  padding: 8px 0 8px 0;
+  line-height: 1.2;
+}
+
+/* THESIS/RESEARCH SECTION */
+.research{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.research h1{
+  padding: 32px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.research-topics{
+  display: flex;
+  justify-content: flex-start;
+  width:100%;
+  height:auto;
+}
+
+.main-research{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+  padding:0 24px 32px 24px;
+}
+
+.main-research video{
+  width:100%;
+  padding-bottom: 24px;
+}
+
+.main-research h3{
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.thesis-topics{
+  display:flex;
+  flex-direction: column;
+  width:40%;
+}
+
+.thesis{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thesis:hover{
+  background-color: white;
+  color: blue;
+}
+
+.thesis img{
+  width:35%;
+  height:200px;
+  padding:16px 0 16px 16px;
+}
+
+.thesis-content{
+  display:flex;
+  flex-direction: column;
+  width:65%;
+  padding-left: 16px;
+}
+
+.thesis-content h3{
+  font-weight: bold;
+  padding-top:32px;
+  font-size:24px;
+  padding-bottom: 16px;
+}
+
+
+/*Footer Section */
+
+footer{
+  background-color: maroon;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 100px;
+}
+
+.copyright, footer nav {
+  padding-top: 16px;
+}
+
+.copyright{
+  padding-left:24px;
+}
+footer span{
+  padding-right:16px;
 }
