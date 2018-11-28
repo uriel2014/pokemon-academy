@@ -35,6 +35,23 @@
   display:none;
 }
 
+@media only screen and (max-width: 560px){
+
+  .logo p, .header nav {
+    display:none;
+  }
+
+  .mobile-logo{
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .mobile-logo i{
+    padding: 0 16px;
+  }
+
+}
+
 
 /* Main Image Section */
 
@@ -79,6 +96,32 @@
 .button:hover{
   background-color: blue;
   color:white;
+}
+
+
+@media only screen and (max-width:560px){
+
+  .main-section{
+    flex-direction: column;
+  }
+
+  .main-section img{
+    width:100%;
+    padding: 0;
+  }
+
+  .main-content{
+    padding: 32px 16px;
+  }
+
+  .main-content h1{
+    padding-bottom: 32px;
+  }
+
+  .main-content p{
+    padding-bottom: 24px;
+  }
+
 }
 
 /* INFORMATION SECTION */
@@ -152,12 +195,40 @@
   padding-bottom: 8px;
 }
 
-
 .story-content span{
   color: blue;
   padding-bottom 16px;
 }
 
+@media only screen and (max-width:560px){
+
+  .main-info{
+    display:none;
+  }
+
+  .info-stories{
+    width:100%;
+    margin-top: 0;
+    padding:16px 16px 32px 16px;
+  }
+
+  .story{
+    flex-direction: column;
+    width:100%;
+    padding-bottom: 64px;
+  }
+
+  .story img{
+    height:auto;
+    width:100%;
+    padding:0 0 16px 0;
+  }
+
+  .story-content{
+    width:100%;
+  }
+
+}
 
 /* COURSES SECTION */
 
@@ -225,6 +296,37 @@ being taking into place. */
 .topic p{
   padding: 8px 0 8px 0;
   line-height: 1.2;
+}
+
+
+@media only screen and (max-width:560px){
+
+  .courses{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 16px 16px 32px 16px;
+    width:auto;
+  }
+
+  .course{
+    padding-right: 0;
+    padding-bottom: 8px;
+    width:auto;
+  }
+
+  .course img, .topic p{
+    display:none;
+  }
+
+  .topic{
+    height:auto;
+    padding: 16px 0 24px 16px;
+  }
+
+  .topic h2{
+    padding-bottom:0;
+  }
+
 }
 
 /* THESIS/RESEARCH SECTION */
@@ -303,6 +405,32 @@ being taking into place. */
   padding-bottom: 16px;
 }
 
+@media only screen and (max-width:560px){
+
+  .research h1{
+    padding: 32px 0 16px 0;
+  }
+
+  .research-topics{
+    flex-direction: column;
+    width:100%;
+  }
+  .main-research{
+    flex-direction: column;
+    width:auto;
+    padding:0;
+  }
+
+  .main-research video{
+    width:100%;
+  }
+
+  .main-research h3, .main-research p, .thesis-topics{
+    display: none;
+  }
+
+}
+
 
 /*Footer Section */
 
@@ -325,4 +453,19 @@ footer{
 }
 footer span{
   padding-right:16px;
+}
+
+@media only screen and (max-width:560px){
+
+  footer{
+    height:auto;
+  }
+
+  .copyright{
+    padding-bottom: 16px;
+  }
+
+  footer nav{
+    display:none;
+  }
 }
